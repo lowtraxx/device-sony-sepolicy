@@ -58,3 +58,4 @@ r_dir_file(netmgrd, sysfs_socinfo)
 r_dir_file(netmgrd, sysfs_subsys)
 
 allow netmgrd toolbox_exec:file rx_file_perms;
+allow netmgrd sysfs_pronto:file r_file_perms;

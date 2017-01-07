@@ -31,3 +31,4 @@ allow qmuxd qmuxd:socket create_socket_perms;
 r_dir_file(qmuxd, sysfs_pronto)
 r_dir_file(qmuxd, sysfs_socinfo)
 r_dir_file(qmuxd, sysfs_subsys)
+allow qmuxd sysfs_pronto:file r_file_perms;

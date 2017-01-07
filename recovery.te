@@ -1,2 +1,9 @@
+recovery_only(`
 # Recovery needs access to syslog
 allow recovery self:capability2 syslog;
+allow recovery rootfs:dir w_dir_perms;
+allow recovery pstorefs:dir search;
+allow recovery pstorefs:file r_file_perms;
+allow recovery selinuxfs:file w_file_perms;
+')
+

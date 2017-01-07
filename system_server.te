@@ -19,3 +19,4 @@ r_dir_file(system_server, sysfs_addrsetup)
 r_dir_file(system_server, sysfs_pronto)
 r_dir_file(system_server, sysfs_socinfo)
 r_dir_file(system_server, sysfs_subsys)
+allow system_server sysfs_pronto:file r_file_perms;

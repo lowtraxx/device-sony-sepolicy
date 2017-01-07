@@ -13,3 +13,6 @@ rw_dir_file(thermanager, sysfs_devices_system_cpu)
 rw_dir_file(thermanager, sysfs_usb_supply)
 rw_dir_file(thermanager, sysfs_thermal)
 rw_dir_file(thermanager, sysfs_performance)
+allow thermanager { sysfs_devices_system_cpu sysfs_thermal sysfs }:file w_file_perms;
+allow thermanager sysfs_usb_supply:dir search;
+allow thermanager sysfs_usb_supply:file rw_file_perms;
